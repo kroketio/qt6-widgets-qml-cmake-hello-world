@@ -2,7 +2,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets QuickWidgets Gui Quick Quick3D Multimedia)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets QuickWidgets Gui Quick)
 
 file(GLOB SOURCE_FILES
     "*.h"
@@ -19,10 +19,8 @@ qt_add_executable(hello
 target_link_libraries(hello PUBLIC
     Qt6::Core
     Qt6::Gui
-    Qt6::Multimedia
     Qt6::Qml
     Qt6::Quick
-    Qt6::Quick3D
     Qt6::Widgets
     Qt6::QuickWidgets
     PNG::PNG

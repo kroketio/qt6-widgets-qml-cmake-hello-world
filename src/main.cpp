@@ -15,7 +15,6 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QtQuick3D/qquick3d.h>
 
 int main(int argc, char *argv[]) {
   qDebug() << "qt" << qVersion();

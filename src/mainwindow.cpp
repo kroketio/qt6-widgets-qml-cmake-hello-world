@@ -51,9 +51,6 @@ void MainWindow::createQml() {
   m_quickWidget->setSource(QUrl(QStringLiteral("qrc:/qml/main.qml")));
   m_quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
-  // example signal from QML to C++
-  connect((QObject*)m_quickWidget->rootObject(), SIGNAL(example(int)), this, SLOT(onExample(int)));
-
   ui->qml->layout()->addWidget(m_quickWidget);
 }
 
